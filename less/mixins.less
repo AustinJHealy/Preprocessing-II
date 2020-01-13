@@ -1,1 +1,21 @@
 // Mixins in here
+.display-flex (@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btns(@color, @bgcolor){
+    
+    .display-flex(center, center);
+        border: 1px solid grey;
+        border-radius: 15px;
+        font-size: 2rem;
+        background-color: @bgcolor;
+        color: @color;
+        width: 80%;
+        height: 15%;
+
+}
+
+
