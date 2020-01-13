@@ -1,1 +1,68 @@
 // Navigation Styles here
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    
+    h1 {
+        font-size: 5rem;
+        width: 40%;
+        height: 10vh;
+       .display-flex(flex-start, center);
+        margin-left: 10%;
+    
+        @media @mobile {
+           font-size: 4rem;
+           width: 100%;
+           .display-flex(center, center);
+           margin: 1% 0 0 0;
+        }
+    }
+
+    nav {
+        width: 40%;
+        height: 10vh;
+        font-size: 2rem;
+        .display-flex(space-between, center);
+        margin-right: 10%;
+
+        @media @mobile {
+            width: 100%;
+            margin: 0 15%;
+            font-size: 1.5rem;
+            height: 5vh;
+        }
+    
+        a {
+            text-decoration: none;
+            color: black;
+            .display-flex(center,center);
+            padding:1%;
+            text-align: center;
+        }
+    }
+    
+    hr {
+        width: 100%;
+        border: 1px dashed @navigation-border;
+    }
+    
+    img {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    h2 {
+        margin: 2% 10% 0 10%;
+    }
+    
+    p {
+        margin: 0 10% 0 10%;
+        font-size: 16px;
+    }
+
+}
+
